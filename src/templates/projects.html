@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    {% if title %}
+      <h1 style="font-family:geneva; text-align:center;">{{ title }}</h1>
+    {% endif %}
+      <p></p>
+
+        <div class="col-12 col-md-10 mb-3 mx-auto">
+          <div class="card mb-3 border border-style:groove;">
+            <div class="row no-gutters">
+
+              <div class="col-md-6">
+                <a href="http://demiurge.pythonanywhere.com" target="_blank">
+                  <img src="{{ project.image.url }}" class="img-thumbnail">
+                </a>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card-body"  style="font-family:geneva;">
+                  <p class="card-text">
+                    <a href="http://demiurge.pythonanywhere.com" target="_blank">http://demiurge.pythonanywhere.com</a> - this is a website that calculates an amount of calories that you need, based on your parameters.
+                    <p>
+                        <ul>
+                          <li>Backend: Python(Django)</li>
+                          <li>Frontend: Bootstrap, jQuery</li>
+                        </ul>
+                    </p>
+                  </p>
+                  <p class="card-text">{{me.content | linebreaks}}</p>
+                </div>
+              </div>
+
+            </div>
+          <div>
+        </div>
+
+{% endblock %}

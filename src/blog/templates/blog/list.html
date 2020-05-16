@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if title %}
+        <h1 style="font-family:geneva; text-align:center;">{{ title }}</h1>
+    {% endif %}
+
+    <div class="row">
+        {% for object in object_list %}
+            {% include "blog/list-inline.html" with blog_post=object truncate=True detail=False %}
+        {% endfor %}
+    </div>
+
+{% endblock %}
+

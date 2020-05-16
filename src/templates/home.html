@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <p></p>
+        <div class="col-12 col-md-10 mb-3 mx-auto">
+            <div class="card mb-3 border-0">
+                <div class="row no-gutters">
+
+                    <div class="col-md-2">
+                        <br>   
+                        <img src="{{ me.image.url }}"  class="img-thumbnail">
+                    </div>
+                    
+                    <div class="col-md-8"  style="font-family:geneva;">
+                        <div class="card-body">
+                           <h6>
+                               <em>
+                               <p class="card-text">
+
+                                    Stanislav Nikolenko<br>
+                                    Russia, Krasnodar<br>
+
+                                    <p></p>
+
+                                    Software developer<br>
+                                    Assessor-tester at Yandex<br>
+
+                                    <p></p>
+                                    Email: demiurg2501@gmail.com<br>
+                                    GitHub: <a href="https://github.com/Stainislav" target="_blank">https://github.com/Stainislav</a><br>
+                                    Linkedin: <a href="https://www.linkedin.com/in/stanislav-nikolenko" target="_blank">https://www.linkedin.com/in/stanislav-nikolenko</a><br>
+
+                                </p>
+                            </h6>
+                            </em>
+                            <br>
+
+                            <h5>
+                                <p>
+                                    Hi! I am a self-taught software developer. &#128515; 
+                                </p>
+
+                                <p>
+                                    I work remotely at Yandex company as an assessor-tester, i.e. I manually test different products and services. In my spare time I build pet projects in Python. You may see some of them on the projects page.
+                                </p> 
+
+                                <p>
+                                    This is the list of technologies I used in my projects: Python, Django, AJAX, SQL, JavaScript, Bootstrap, jQuery, Git.
+                                </p>
+                            </h5>
+
+                            <p class="card-text">{{me.content | linebreaks}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            <div>
+        </div>
+
+{% endblock %}
+
